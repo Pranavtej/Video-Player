@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+ <html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Video Player</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+ <link href="mediaelementplayer.min.css" rel="stylesheet" />
+
+</head>
+ <body>
+    <div class="container mt-5 mb-5">
+
+        <div class="row">
+        
+        <div class="col-md-8">
+        
+        <video width="728" height="410" poster="poster/Blue Moon.jpg"> 
+            <source src="Eye - 79545.mp4" type="video/mp4" size="576">
+             <source src="video/Blue Moon-720p.mp4" type="video/mp4" size="720"/> 
+             <source src="video/Blue Moon-1080p.mp4" type="video/mp4" size="1080"/>
+        
+        <track src="caption/Blue Moon.en.vtt" kind="captions" srclang="en" label="English">
+        
+        <track src="caption/Blue Moon.fr.vtt" kind="captions" srclang="fr" label="Français">
+        
+        <track src="caption/Blue Moon.id.vtt" kind="captions" srclang="id" label="Indonesia">
+        
+        <track src="caption/Blue Moon.ms.vtt" kind="captions" srclang="ms" label="Melayu">
+        
+        </video>
+        
+        </div>
+        
+        <div class="col-md-4"></div>
+        
+        </div>
+        
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <script src="mediaelement-and-player.min.js"></script> 
+        <script>
+        
+        $('video').mediaelementplayer() ;
+        
+      </script>
+        
+         </body>
+        
+ </html>
